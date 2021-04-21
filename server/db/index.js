@@ -10,6 +10,7 @@ if (process.env.JAWSDB_URL) {
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
   };
+  console.log(connectionInfo);
 }
 
 const connection = mysql.createConnection({
