@@ -13,14 +13,7 @@ if (process.env.JAWSDB_URL) {
   console.log(connectionInfo);
 }
 
-const connection = mysql.createConnection({
-  // connectionLimit: 10,
-  // password: "password",
-  // user: "root",
-  // database: "recipe",
-  // host: "127.0.0.1",
-  connectionInfo,
-});
+const connection = mysql.createConnection(connectionInfo);
 
 connection.connect((error) => {
   if (error) throw error;
