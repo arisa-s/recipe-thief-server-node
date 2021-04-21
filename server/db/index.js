@@ -2,11 +2,15 @@ const mysql = require("mysql");
 
 const pool = mysql.createPool({
   connectionLimit: 10,
-  password: "password",
-  user: "root",
+  //password: "password",
+  //user: "root",
   database: "recipe",
-  host: "127.0.0.1",
-  port: 3306,
+  //host: "127.0.0.1",
+  //port: 3306,
+  HOST: "us-cdbr-east-03.cleardb.com",
+  USER: "b31aa89a149cec",
+  PASSWORD: "e15db93b",
+  DB: "heroku_004f919d4394a75",
 });
 
 let recipedb = {};
