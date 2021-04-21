@@ -1,10 +1,10 @@
 const mysql = require("mysql");
 
 const pool = mysql.createPool({
-  connectionLimit: 10,
+  //connectionLimit: 10,
   //password: "password",
   //user: "root",
-  database: "recipe",
+  //database: "recipe",
   //host: "127.0.0.1",
   //port: 3306,
   HOST: "us-cdbr-east-03.cleardb.com",
