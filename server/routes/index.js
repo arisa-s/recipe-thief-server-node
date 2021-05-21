@@ -55,7 +55,7 @@ router.get("/recipes/:id", async (req, res, next) => {
 router.delete("/recipes/:id", async (req, res, next) => {
   console.log("DELETE RECIPE BY ID");
   try {
-    let results = await db.deleteRecipe(req.body.id);
+    let results = await db.deleteRecipe(req.params.id);
     res.json(results);
   } catch (e) {
     console.log(e);
